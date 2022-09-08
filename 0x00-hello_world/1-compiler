@@ -1,1 +1,2 @@
-Holberton School
+#!/bin/bash
+gcc -S $CFILE
