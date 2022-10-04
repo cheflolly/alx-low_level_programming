@@ -1,13 +1,19 @@
 #include "main.h"
-
 /**
- * _isupper - checks for uppercase character
- * @c: the character to be checked
- * Return: 1 if c is uppercase, 0 otherwise
+ * _abs - value of an integer
+ * Description: computes the absolute
+ * value of an int
+ * @hd: integer type
+ * Return: absolute value
  */
-
-int _isupper(int c)
-
+int _abs(int hd)
 {
-	return (c >= 'A' && c <= 'Z');
+if (hd < 0)
+{
+return (hd * -1);
+}
+else
+{
+return (hd);
+}
 }
