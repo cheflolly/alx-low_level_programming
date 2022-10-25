@@ -13,7 +13,7 @@ int pop_listint(listint_t **head)
 	int rem; /* rem stands for removed */
 
 	if (*head == NULL)
-		return (rem);
+		return (0);
 
 	temp = *head;
 	rem = temp->n;
