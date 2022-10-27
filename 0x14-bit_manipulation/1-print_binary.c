@@ -10,23 +10,12 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int temp;
-	int shifts;
-
-	if (n == 0)
+	if (n >> 0)
 	{
+		if (n >> 1)
+			print_binary(n >> 1);
+		_putchar((n & 1) + '0');
+	}
+	else
 		_putchar('0');
-		return (0);
-	}
-
-	for (temp = n, shifts = 0; (temp >>= 1) > 0; shifts++)
-		;
-
-	for (; shifts >= 0; shifts--)
-	{
-		if ((n >> shifts) & 1)
-			_putchar('1');
-		else
-			_putchar('0');
-	}
 }
